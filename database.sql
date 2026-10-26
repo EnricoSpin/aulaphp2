@@ -1,0 +1,14 @@
+-- Execute no banco bd_backend antes de usar as telas de Cliente e Fornecedor.
+CREATE TABLE IF NOT EXISTS cliente (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(150) NOT NULL,
+    email VARCHAR(150) NOT NULL,
+    telefone VARCHAR(30) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS fornecedor (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    razao_social VARCHAR(180) NOT NULL,
+    email VARCHAR(150) NOT NULL,
+    telefone VARCHAR(30) NOT NULL
+);
